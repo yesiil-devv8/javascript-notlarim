@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>JavaScript kodundan önce...</p>
+
+        <!--
+            1. HTML İÇİNDE JAVASCRIPT
+
+            JavaScript kodunu HTML dosyasının içinde
+            <script> etiketi kullanarak yazabiliriz.
+
+            alert('Hello, World!'); kodu tarayıcıda
+            bir uyarı penceresi açar.
+
+            Tarayıcı HTML kodunu yukarıdan aşağıya işler.
+            İlk paragraftan sonra JavaScript çalışır.
+            Uyarı penceresi kapatıldıktan sonra sonraki
+            HTML kodu işlenir.
+        -->
+
+        <script>
+            alert('Hello, World!');
+        </script>
+
+        <!--
+            2. HARİCİ JAVASCRIPT DOSYASI
+
+            JavaScript kodunu ayrı bir .js dosyasında
+            tutabiliriz. Bunun için HTML dosyasında
+            <script src="ana.js"></script> kullanılır.
+
+            src, İngilizce "source" kelimesinin kısaltmasıdır.
+            JavaScript dosyasının yolunu belirtir.
+
+            Örnek:
+            <script src="ana.js"></script>
+
+            Bu kod ana.js dosyasını yükler ve içindeki
+            JavaScript kodunu çalıştırır.
+
+            Dosyanın içinde ne yazdığına göre sonuç değişir.
+        -->
+
+        <!--
+            3. console.log() VE alert() FARKI
+
+            ana.js dosyasının içinde şu kod varsa:
+
+            console.log('Merhaba!');
+
+            HTML dosyasında <script src="ana.js"></script>
+            kullanıldığında "Merhaba!" tarayıcının geliştirici
+            konsolunda görünür. Web sayfasında normal metin
+            olarak görünmez ve uyarı penceresi açılmaz.
+
+            Ancak ana.js dosyasında şu kod varsa:
+
+            alert('Merhaba!');
+
+            Aynı HTML etiketi kullanıldığında tarayıcıda
+            "Merhaba!" yazan bir uyarı penceresi açılır.
+
+            Yani sonucu belirleyen, JavaScript dosyasının
+            içindeki koddur.
+        -->
+
+        <!--
+            4. HARİCİ VE SAYFA İÇİ JAVASCRIPT'İ BİRLİKTE KULLANMA
+
+            Örnek:
+
+            <script src="ana.js"></script>
+            <script>
+                alert('Merhaba!');
+            </script>
+
+            İlk script etiketi harici ana.js dosyasını
+            çalıştırır. İkinci script etiketi içindeki
+            JavaScript kodu da ayrıca çalışır.
+
+            Uyarı penceresi, ikinci etikette bulunan
+            alert('Merhaba!') kodu nedeniyle açılır.
+            Aynı alert kodu ana.js dosyasına yazılsaydı
+            harici dosya üzerinden de uyarı açılabilirdi.
+        -->
+
+        <!--
+            5. ÖNEMLİ: src KULLANIMI
+
+            Aşağıdaki örnekte alert(1) çalıştırılmaz:
+
+            <script src="file.js">
+                alert(1);
+            </script>
+
+            Çünkü src kullanıldığında JavaScript harici
+            dosyadan alınır. Aynı script etiketinin içindeki
+            kod dikkate alınmaz.
+
+            İkisini de çalıştırmak için ayrı script etiketleri
+            kullanmalıyız:
+
+            <script src="file.js"></script>
+            <script>
+                alert(1);
+            </script>
+        -->
+
+        <!--
+            6. KISA ÖZET
+
+            HTML: Sayfanın yapısını oluşturur.
+            <p>: Paragraf oluşturur.
+            <script>: JavaScript kodunu çalıştırmak için kullanılır.
+            alert(): Tarayıcıda uyarı penceresi açar.
+            console.log(): Geliştirici konsoluna mesaj yazar.
+            src: Harici dosyanın yolunu belirtir.
+            .js: JavaScript dosyalarının uzantısıdır.
+
+            Bir dosyanın çağrılması ile ekrana bir şey
+            yazdırılması aynı şey değildir. Sonucu,
+            çalıştırılan JavaScript kodu belirler.
+        -->
+
+        <p>JavaScript kodundan sonra.</p>
+    </body>
+</html>
