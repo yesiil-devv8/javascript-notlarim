@@ -1,4 +1,4 @@
-# JavaScript — while ve for Döngüleri
+# JavaScript — while ve for Döngüleri 2.12
 
 ## 1. Döngüler (Loops) Nedir?
 
